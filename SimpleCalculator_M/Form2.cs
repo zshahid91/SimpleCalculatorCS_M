@@ -44,7 +44,7 @@ namespace SimpleCalculator_M
             richTextBox1.Text += "3";
         }
 
-        public void AddButton_Click(object sender, EventArgs e)
+        private void AddButton_Click(object sender, EventArgs e)
         {
             richTextBox1.Text += "+";
             AddButton_clicked = true;
@@ -55,7 +55,7 @@ namespace SimpleCalculator_M
             richTextBox1.Text += "-";
         }
 
-        public void EqualButton_Click(object sender, EventArgs e)
+        private void EqualButton_Click(object sender, EventArgs e)
         {
             float ans;
             if(AddButton_clicked)
