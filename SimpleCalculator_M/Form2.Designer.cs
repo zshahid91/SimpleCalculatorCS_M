@@ -52,6 +52,7 @@
             // 
             // num1
             // 
+            this.num1.Font = new System.Drawing.Font("Ink Free", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.num1.Location = new System.Drawing.Point(139, 357);
             this.num1.Name = "num1";
             this.num1.Size = new System.Drawing.Size(94, 54);
@@ -62,6 +63,7 @@
             // 
             // num2
             // 
+            this.num2.Font = new System.Drawing.Font("Ink Free", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.num2.Location = new System.Drawing.Point(239, 357);
             this.num2.Name = "num2";
             this.num2.Size = new System.Drawing.Size(94, 54);
@@ -72,6 +74,7 @@
             // 
             // num3
             // 
+            this.num3.Font = new System.Drawing.Font("Ink Free", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.num3.Location = new System.Drawing.Point(339, 357);
             this.num3.Name = "num3";
             this.num3.Size = new System.Drawing.Size(94, 54);
@@ -82,15 +85,18 @@
             // 
             // num4
             // 
+            this.num4.Font = new System.Drawing.Font("Ink Free", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.num4.Location = new System.Drawing.Point(139, 297);
             this.num4.Name = "num4";
             this.num4.Size = new System.Drawing.Size(94, 54);
             this.num4.TabIndex = 4;
             this.num4.Text = "4";
             this.num4.UseVisualStyleBackColor = true;
+            this.num4.Click += new System.EventHandler(this.num4_Click);
             // 
             // num5
             // 
+            this.num5.Font = new System.Drawing.Font("Ink Free", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.num5.Location = new System.Drawing.Point(239, 297);
             this.num5.Name = "num5";
             this.num5.Size = new System.Drawing.Size(94, 54);
@@ -100,6 +106,7 @@
             // 
             // num6
             // 
+            this.num6.Font = new System.Drawing.Font("Ink Free", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.num6.Location = new System.Drawing.Point(339, 297);
             this.num6.Name = "num6";
             this.num6.Size = new System.Drawing.Size(94, 54);
