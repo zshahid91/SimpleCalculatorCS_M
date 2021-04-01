@@ -12,19 +12,18 @@ namespace SimpleCalculator_M
 {
     public partial class Form2 : Form
     {
+        float number1, number2;
+        public bool AddButton_clicked = false;
         public Form2()
         {
             InitializeComponent();
         }
 
-        //private float num1 = 0;
-        private bool AddButton_clicked = false;
-
         public void button1_Click(object sender, EventArgs e)
         {
-            float num1 = 0;
+            
+            number1 = 1;
             richTextBox1.Text += "1";
-            num1 = float.Parse(richTextBox1.Text);
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -34,9 +33,9 @@ namespace SimpleCalculator_M
 
         public void num2_Click(object sender, EventArgs e)
         {
-            float num2 = 0;
+
             richTextBox1.Text += "2";
-            num2 = float.Parse(richTextBox1.Text);
+            number2 = 2;
            
         }
 
@@ -48,6 +47,7 @@ namespace SimpleCalculator_M
         public void AddButton_Click(object sender, EventArgs e)
         {
             richTextBox1.Text += "+";
+            AddButton_clicked = true;
         }
 
         private void SubButton_Click(object sender, EventArgs e)
@@ -60,7 +60,8 @@ namespace SimpleCalculator_M
             float ans;
             if(AddButton_clicked)
             {
-                ans = num1 + num2;
+                ans = number1 + number2;
+                richTextBox1.Text = ans.ToString();
             }
         }
 
